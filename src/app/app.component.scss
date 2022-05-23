@@ -1,0 +1,34 @@
+@import '../assets/styles/color-codes';
+
+:host {
+    .eyi-sub-menu-items-wrapper {
+        width: 350px;
+    }
+    .eyi-hamburger-icon {
+        color: $eyi-white;
+        cursor: pointer;
+        left: 15px;
+        position: absolute;
+        top: 13px;
+        z-index: 9999;
+    }
+    .eyi-route-body {
+        height: calc(100% - 85px);
+        overflow: auto;
+    }
+    .eyi-responsive-menu-item {
+        cursor: pointer;
+        &:hover {
+            background: $eyi-light-gray;
+        }
+    }
+    .eyi-sidenav-content {
+        height: 100vh;
+    }
+    .eyi-responsive-register {}
+    ::ng-deep {
+        .mat-expansion-panel-body {
+            padding: 0;
+        }
+    }
+}

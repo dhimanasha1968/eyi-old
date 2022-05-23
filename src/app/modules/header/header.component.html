@@ -1,0 +1,28 @@
+<header>
+    <div class="eyi-top-header d-flex py-2 px-5">
+        <div class="d-none d-lg-block">
+            <button type="button" class="btn btn-sm btn-link text-secondary text-underline-hover me-2 text-uppercase">Online Yoga</button>
+            <button type="button" mat-button [matMenuTriggerFor]="contactMenu" class="btn btn-sm btn-link text-secondary text-underline-hover text-uppercase">Contact</button>
+        </div>
+        <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <img src="./assets/icons/Everest-Yoga-logo.webp" class="eyi-logo me-2" />
+            <strong>Everest Yoga Institute</strong>
+        </div>
+        <div class="d-none d-lg-flex">
+            <div class="flex-grow-1 me-2 d-flex align-items-center">
+                <i class="fa-brands cursor-pointer me-2" [ngClass]="social" *ngFor="let social of socialMediaList"></i>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary text-uppercase">Register Now</button>
+        </div>
+    </div>
+    <div class="eyi-bottom-header d-flex align-items-center justify-content-center d-none d-lg-flex">
+        <ng-container *ngFor="let menuItem of navMenuItems">
+            <button type="button" class="btn btn-link cursor-pointer text-secondary text-decoration-none text-uppercase">{{menuItem.label}}</button>
+        </ng-container>
+    </div>
+</header>
+<mat-menu #contactMenu="matMenu">
+  <button type="button" mat-menu-item *ngFor="let item of topContactInfo">
+    <i [ngClass]="item.icon"></i><span class="ms-2">{{item.text}}</span>
+  </button>
+</mat-menu>

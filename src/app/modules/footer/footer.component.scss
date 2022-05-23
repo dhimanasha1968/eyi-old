@@ -1,0 +1,13 @@
+@import '../../../assets/styles/color-codes';
+
+:host {
+    footer {
+        background: $eyi-black;
+    }
+    .eyi-footer-logo {
+        height: 50px;
+    }
+    .eyi-footer-icons {
+        height: 50px;
+    }
+}

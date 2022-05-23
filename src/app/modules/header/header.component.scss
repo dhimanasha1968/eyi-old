@@ -1,0 +1,24 @@
+@import '../../../assets/styles/color-codes';
+
+:host {
+    .eyi-top-header {
+        background-color: $eyi-primary;
+        box-shadow: 0 1px 5px $eyi-light-gray;
+        color: $eyi-white;
+
+        .eyi-logo {
+            height: 30px;
+        }
+    }
+
+    .eyi-bottom-header {
+        background-color: $eyi-sub-primary;
+        box-shadow: 0 1px 5px $eyi-light-gray;
+        color: $eyi-white;
+    }
+}
+
+.mat-menu-item {
+    height: 30px;
+    line-height: normal;
+}

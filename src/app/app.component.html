@@ -1,0 +1,39 @@
+<mat-drawer-container class="eyi-container">
+    <mat-drawer #drawer class="eyi-sidenav" mode="over">
+        <div class="p-4 eyi-sub-menu-items-wrapper d-flex flex-column h-100">
+            <mat-accordion class="flex-grow-1">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header expandedHeight="48px" collapsedHeight="48px">
+                    <mat-panel-title>
+                      <strong class="text-primary">Menu Items</strong>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="py-2 px-4 eyi-responsive-menu-item" *ngFor="let item of navMenuItems">
+                    {{item.label}}
+                  </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <strong class="text-primary">Contact information</strong>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="py-2 px-4 eyi-responsive-menu-item" *ngFor="let item of topContactInfo">
+                    <i [ngClass]="item.icon"></i><span class="ms-2">{{item.text}}</span>
+                  </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <button type="button" class="btn btn-outline-primary eyi-responsive-register">Register</button>
+        </div>
+    </mat-drawer>
+    <div class="eyi-sidenav-content">
+        <div class="eyi-hamburger-icon d-block d-md-block d-sm-block d-xs-block d-lg-none" (click)="drawer.toggle()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <eyi-header></eyi-header>
+        <div class="eyi-route-body">
+            <router-outlet></router-outlet>
+            <eyi-footer></eyi-footer>
+        </div>
+    </div>
+</mat-drawer-container>

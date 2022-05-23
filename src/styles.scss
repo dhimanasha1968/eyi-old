@@ -1,0 +1,37 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import './assets/styles/styles';
+
+html, body { height: 100%; }
+body { background: $eyi-white; margin: 0; font-family: $eyi-font-family; overflow: hidden; }
+
+$eyi-scroll-width: 5px;
+$eyi-scroll-height: 5px;
+$eyi-scroll-radius: 4px;
+
+* {
+    // for Firefox
+    scrollbar-width:thin;
+    scrollbar-color: $eyi-dark-gray $eyi-white;
+
+    // for rest browsers*
+    & ::-webkit-scrollbar {
+    width: $eyi-scroll-width;
+    height: $eyi-scroll-height;
+    }
+
+    /* Track */
+    & ::-webkit-scrollbar-track {
+    background: $eyi-white;
+    }
+
+    /* Handle */
+    & ::-webkit-scrollbar-thumb {
+        background: $eyi-dark-gray;
+        border-radius: $eyi-scroll-radius;
+    }
+    /* Handle on hover */
+    & ::-webkit-scrollbar-thumb:hover {
+        background: $eyi-very-dark-gray;
+    }
+}
+  

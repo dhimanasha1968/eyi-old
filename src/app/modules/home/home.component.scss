@@ -1,0 +1,18 @@
+@import '../../../assets/styles/color-codes';
+
+:host {
+    .eyi-brief-info {
+        background: $eyi-very-light-gray2;
+    }
+
+    .eyi-carousel-wrapper {
+        ::ng-deep {
+            .carousel-inner {
+                max-height: 400px;
+                img {
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
