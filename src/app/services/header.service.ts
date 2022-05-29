@@ -85,11 +85,11 @@ export class HeaderService {
     {
       label: 'Contact Us',
       path: 'contact-us'
-    },
-    {
-      label: 'Blog',
-      path: 'blog'
     }
+    // {
+    //   label: 'Blog',
+    //   path: 'blog'
+    // }
   ];
 
   constructor() { }
