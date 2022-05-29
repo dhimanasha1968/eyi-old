@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
     this.navMenuItems = this.headerService.navMenuItems;
   }
 
+  register(): void {
+    this.router.navigate(['/register']);
+  }
+
   onMenuChange(menuItem: HeaderMenuItems): void {
     this.router.navigate([menuItem.path]);
   }

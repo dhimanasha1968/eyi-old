@@ -1,0 +1,7 @@
+@import '../../../assets/styles/variables';
+
+:host {
+    mat-expansion-panel {
+        margin: $eyi-space-lg 0;
+    }
+}

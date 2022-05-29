@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { TermsConditionsComponent } from './components/terms-conditions/terms-conditions.component';
 
 @Component({
   selector: 'eyi-register',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openTermsAndConditions(): void {
+    this.dialog.open(TermsConditionsComponent);
   }
 
 }

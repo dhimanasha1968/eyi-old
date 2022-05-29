@@ -12,7 +12,7 @@
             <div class="flex-grow-1 me-2 d-flex align-items-center">
                 <i class="fa-brands cursor-pointer me-2" [ngClass]="social" *ngFor="let social of socialMediaList"></i>
             </div>
-            <button type="button" class="btn btn-sm btn-outline-secondary text-uppercase">Register Now</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary text-uppercase" (click)="register()">Register Now</button>
         </div>
     </div>
     <div class="eyi-bottom-header d-flex align-items-center justify-content-center d-none d-lg-flex">
