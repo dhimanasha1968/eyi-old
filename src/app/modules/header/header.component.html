@@ -17,7 +17,7 @@
     </div>
     <div class="eyi-bottom-header d-flex align-items-center justify-content-center d-none d-lg-flex">
         <ng-container *ngFor="let menuItem of navMenuItems">
-            <button type="button" class="btn btn-link cursor-pointer text-secondary text-decoration-none text-uppercase">{{menuItem.label}}</button>
+            <button type="button" class="btn btn-link cursor-pointer text-secondary text-decoration-none text-uppercase" (click)="onMenuChange(menuItem)">{{menuItem.label}}</button>
         </ng-container>
     </div>
 </header>

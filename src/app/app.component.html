@@ -8,7 +8,7 @@
                       <strong class="text-primary">Menu Items</strong>
                     </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <div class="py-2 px-4 eyi-responsive-menu-item" *ngFor="let item of navMenuItems">
+                  <div class="py-2 px-4 eyi-responsive-menu-item" (click)="onMenuChange(item); drawer.toggle()" *ngFor="let item of navMenuItems">
                     {{item.label}}
                   </div>
                 </mat-expansion-panel>

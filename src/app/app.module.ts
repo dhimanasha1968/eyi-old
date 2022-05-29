@@ -7,6 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header';
 import { FooterModule } from './modules/footer';
+import { AboutUsModule } from './modules/about-us';
+import { BlogModule } from './modules/blog';
+import { ContactUsModule } from './modules/contact-us';
+import { FaqModule } from './modules/faq';
+import { GalleryModule } from './modules/gallery';
+import { HomeModule } from './modules/home';
+import { OurEventsModule } from './modules/our-events';
+import { RegisterModule } from './modules/register';
+import { YogaCoursesModule } from './modules/yoga-courses';
 
 @NgModule({
   declarations: [
@@ -19,7 +28,16 @@ import { FooterModule } from './modules/footer';
     HeaderModule,
     FooterModule,
     MatSidenavModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AboutUsModule,
+    BlogModule,
+    ContactUsModule,
+    FaqModule,
+    GalleryModule,
+    HomeModule,
+    OurEventsModule,
+    RegisterModule,
+    YogaCoursesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

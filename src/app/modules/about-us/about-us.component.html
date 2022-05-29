@@ -1,0 +1,20 @@
+<div class="eyi-about-us p-4">
+    <div class="eyi-about-us-yoga-banner"></div>
+    <div class="text-center my-4">
+        <button type="button" class="btn btn-outline-primary me-4" (click)="setAboutView(selectedAboutMe.ABOUT)">About Everest Yoga Institute</button>
+        <button type="button" class="btn btn-outline-primary me-4" (click)="setAboutView(selectedAboutMe.SEQUENCE)">Everest Yoga Sequences</button>
+        <button type="button" class="btn btn-outline-primary" (click)="setAboutView(selectedAboutMe.OTHER)">What other says</button>
+    </div>
+
+    <ng-container [ngSwitch]="selectedComponentTab">
+        <ng-container *ngSwitchCase="selectedAboutMe.ABOUT">
+            <eyi-about-everest></eyi-about-everest>
+        </ng-container>
+        <ng-container *ngSwitchCase="selectedAboutMe.SEQUENCE">
+            <eyi-everest-sequences></eyi-everest-sequences>
+        </ng-container>
+        <ng-container *ngSwitchCase="selectedAboutMe.OTHER">
+            <eyi-other-says></eyi-other-says>
+        </ng-container>
+    </ng-container>
+</div>

@@ -1,10 +1,10 @@
 {
   "name": "everest-yoga-institute",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "publish": "ng build --configuration production --base-href everest-yoga-institute && ngh --dir dist/everest-yoga-institute"

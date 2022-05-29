@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HeaderContactInfo, HeaderMenuItems } from '../modules';
+import { HeaderContactInfo, HeaderMenuItems } from '../core/models';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class HeaderService {
     },
     {
       label: 'About Us',
-      path: 'about-us',
+      path: 'about',
       childrens: [
         {
           label: 'Our Facilitators',

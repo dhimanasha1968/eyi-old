@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
-import { HeaderContactInfo, HeaderMenuItems } from './models/headers.models';
+import { HeaderContactInfo, HeaderMenuItems } from '../../core/models/headers.models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'eyi-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
   socialMediaList: string[] = [];
   navMenuItems: HeaderMenuItems[] = [];
 
-  constructor(private headerService: HeaderService) { }
+  constructor(private headerService: HeaderService, private router: Router) { }
 
   ngOnInit(): void {
     this.topContactInfo = this.headerService.topContactInfo;
@@ -20,4 +21,7 @@ export class HeaderComponent implements OnInit {
     this.navMenuItems = this.headerService.navMenuItems;
   }
 
+  onMenuChange(menuItem: HeaderMenuItems): void {
+    this.router.navigate([menuItem.path]);
+  }
 }

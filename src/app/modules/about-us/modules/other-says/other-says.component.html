@@ -1,0 +1,12 @@
+<div class="eyi-other-says">
+    <h1 class="text-primary">What Other says</h1>
+    <div>
+        {{otherSays.title}}
+    </div>
+    <h1 class="text-primary">Our Online Courses</h1>
+    <div class="row col-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 pe-md-3 pe-sm-0" *ngFor="let course of otherSays.onlineCourses">
+            <eyi-online-course [course]="course"></eyi-online-course>
+        </div>
+    </div>
+</div>

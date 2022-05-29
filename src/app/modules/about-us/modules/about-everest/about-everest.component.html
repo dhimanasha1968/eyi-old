@@ -1,0 +1,26 @@
+<div class="eyi-about-text">
+    <h1 class="text-primary">About Everest Yoga Institute</h1>
+    <div>
+        {{aboutInfo.aboutInstitute}}
+    </div>
+    <div class="row col-12 pt-4">
+        <div class="col-md-6 col-sm-12 pe-sm-3">
+            <h1 class="text-primary">A journey of 1000 miles begins with a single step</h1>
+            <div>
+                {{aboutInfo.aboutJourney}}
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h1 class="text-primary">The Everest yoga Institute method</h1>
+            <div>
+                {{aboutInfo.aboutMethod}}
+            </div>
+        </div>
+    </div>
+    <div class="row col-12 pt-4">
+        <h1 class="text-primary">About the Teachers</h1>
+        <div *ngFor="let teacher of aboutInfo.aboutTeachers" class="col-lg-3 col-md-6 col-sm-12 pe-md-4 pe-sm-0">
+            <eyi-about-teachers></eyi-about-teachers>
+        </div>
+    </div>
+</div>
