@@ -1,4 +1,5 @@
 @import '../assets/styles/color-codes';
+@import '../assets/styles/variables';
 
 :host {
     .eyi-sub-menu-items-wrapper {
@@ -16,7 +17,13 @@
         height: calc(100% - 85px);
         overflow: auto;
     }
+    .eyi-menu-items {
+        border-bottom: 1px solid $eyi-light-gray;
+    }
     .eyi-responsive-menu-item {
+        height: $eyi-size-35x;
+        border-top-right-radius: $eyi-size-15x;
+        border-bottom-right-radius: $eyi-size-15x;
         cursor: pointer;
         &:hover {
             background: $eyi-light-gray;
@@ -25,7 +32,6 @@
     .eyi-sidenav-content {
         height: 100vh;
     }
-    .eyi-responsive-register {}
     ::ng-deep {
         .mat-expansion-panel-body {
             padding: 0;

@@ -1,29 +1,27 @@
 <mat-drawer-container class="eyi-container">
     <mat-drawer #drawer class="eyi-sidenav" mode="over">
-        <div class="p-4 eyi-sub-menu-items-wrapper d-flex flex-column h-100">
-            <mat-accordion class="flex-grow-1">
-                <mat-expansion-panel>
-                  <mat-expansion-panel-header expandedHeight="48px" collapsedHeight="48px">
-                    <mat-panel-title>
-                      <strong class="text-primary">Menu Items</strong>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div class="py-2 px-4 eyi-responsive-menu-item" (click)="onMenuChange(item); drawer.toggle()" *ngFor="let item of navMenuItems">
-                    {{item.label}}
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <strong class="text-primary">Contact information</strong>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div class="py-2 px-4 eyi-responsive-menu-item" *ngFor="let item of topContactInfo">
-                    <i [ngClass]="item.icon"></i><span class="ms-2">{{item.text}}</span>
-                  </div>
-                </mat-expansion-panel>
-            </mat-accordion>
-            <button type="button" class="btn btn-outline-primary eyi-responsive-register" (click)="register()">Register</button>
+        <div class="eyi-sub-menu-items-wrapper d-flex flex-column h-100">
+          <div class="flex-grow-1">
+            <div class="eyi-menu-items">
+              <div class="py-2 px-4 text-uppercase eyi-menu-items text-center">
+                <strong>Menu Items</strong>
+              </div>
+              <div class="py-2 px-4 eyi-responsive-menu-item" (click)="onMenuChange(item); drawer.toggle()" *ngFor="let item of navMenuItems">
+                {{item.label}}
+              </div>
+            </div>
+            <div class="eyi-menu-items">
+              <div class="py-2 px-4 text-uppercase eyi-menu-items  text-center">
+                <strong>Contact Info</strong>
+              </div>
+              <div class="py-2 px-4 eyi-responsive-menu-item" *ngFor="let item of topContactInfo">
+                <i [ngClass]="item.icon"></i><span class="ms-2">{{item.text}}</span>
+              </div>
+            </div>
+          </div>
+            <div class="p-4">
+              <button type="button" class="btn btn-outline-primary eyi-responsive-register w-100" (click)="register(); drawer.toggle()">Register</button>
+            </div>
         </div>
     </mat-drawer>
     <div class="eyi-sidenav-content">
