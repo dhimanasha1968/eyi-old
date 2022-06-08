@@ -2,43 +2,52 @@
     <div class="eyi-carousel-wrapper">
         <mdb-carousel [controls]="true" [indicators]="true">
             <mdb-carousel-item>
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="./assets/icons/sliders/image1.jpg" class="d-block w-100" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <p class="text-black d-flex flex-column align-items-center">
+                  <img src="./assets/icons/Everest-Yoga-logo.png" class="eyi-slider-logo mb-3" />
+                  <strong>
+                    ॐ असतो मा सद्गमय ।
+                    तमसो मा ज्योतिर्गमय ।
+                    मृत्योर्मा अमृतं गमय ।
+                    ॐ शान्तिः शान्तिः शान्तिः ॥
+                  </strong>
+                </p>
               </div>
             </mdb-carousel-item>
             <mdb-carousel-item>
               <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+              src="./assets/icons/sliders/image2.jpg"
                 class="d-block w-100"
-                alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="text-black"><strong>SITUATIONAL AWARENESS</strong> with <strong>EVEREST YOGA</strong></p>
               </div>
             </mdb-carousel-item>
             <mdb-carousel-item>
               <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+              src="./assets/icons/sliders/image3.jpg"
                 class="d-block w-100"
-                alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <p>Align your body. Align your life.</p>
               </div>
             </mdb-carousel-item>
         </mdb-carousel>
     </div>    
-    <div class="eyi-brief-info p-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        <button type="button" class="btn btn-link p-0">Read more</button>
+    <div class="eyi-brief-info p-4 text-center">
+      <p>
+        Deepen your yoga knowledge with Everest Yoga.
+      </p>
+      <p>
+        Everest Yoga is an amalgamation of “Authentic Traditional Yoga” & “Modern Yoga”, inclined towards creating physical fitness, mental balance and spiritual elevation. We categorize our learners as Starters, Movers & Flyers and train them according to their needs.
+      </p>
+      <p>
+        <strong>Our Mission -</strong>
+        <i>
+          “To create a Healthy & Happy World through Yogic Practices.”
+        </i>
+      </p>
     </div>
     <div class="p-4 row">
         <div class="col-lg-3 col-md-6 col-sm-12 p-2" *ngFor="let card of cards">

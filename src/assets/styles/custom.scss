@@ -5,3 +5,9 @@
         text-decoration: underline;
     }
 }
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+}

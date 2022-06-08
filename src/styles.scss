@@ -2,7 +2,7 @@
 @import './assets/styles/styles';
 
 html, body { height: 100%; }
-body { background: $eyi-white; margin: 0; font-family: $eyi-font-family; overflow: hidden; }
+body { background: $eyi-white; margin: 0; font-family: $eyi-font-family !important; overflow: hidden; }
 
 $eyi-scroll-width: 5px;
 $eyi-scroll-height: 5px;

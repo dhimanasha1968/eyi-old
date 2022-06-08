@@ -1,4 +1,5 @@
 @import '../../../assets/styles/color-codes';
+@import '../../../assets/styles/variables';
 
 :host {
     .eyi-brief-info {
@@ -8,11 +9,16 @@
     .eyi-carousel-wrapper {
         ::ng-deep {
             .carousel-inner {
-                max-height: 400px;
+                max-height: $eyi-size-400x;
                 img {
-                    max-height: 400px;
+                    max-height: $eyi-size-400x;
                 }
             }
         }
+    }
+
+    .eyi-slider-logo {
+        height: $eyi-size-75x;
+        width: $eyi-size-75x;
     }
 }
